@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 60px
+}
+
+header > h1 {
+    padding-bottom: 10px;
+}
