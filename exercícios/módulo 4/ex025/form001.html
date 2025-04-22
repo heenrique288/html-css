@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="GET" autocomplete="off"> <!--Auto complete -> completar com o histórico do seu computador-->
+
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"> <!--Name -> mais útil para html e php / id -> mais útil para javascript-->
+        </p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!--GET -> usado para dados não sensíveis: Nome, sobrenome, peso
+        POST -> usado para dados sensíveis: Senha, CEP, Telefone
+        
+        GET -> Quando você envia dados por GET, você só pode enviar até 3 mil bytes =~ 3 mil letras. Não se utiliza GET em envios de fotos e vídeos também, se usa POST.
+        
+        HTTPS -> MELHOR para proteger dados-->
+</body>
+</html>
