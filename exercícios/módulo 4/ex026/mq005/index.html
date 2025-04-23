@@ -6,10 +6,11 @@
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/media-query.css">
 
     <!--Site para os links dos ícones: https://developers.google.com/fonts/docs/material_symbols?hl=pt-br-->
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu <!--Aqui é só colocar o nome do ícone que aparece--></span>
@@ -40,6 +41,14 @@
            } else {
                 itens.style.display = 'block'
            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
         }
     </script>
 </body>
