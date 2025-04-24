@@ -10,8 +10,6 @@
 
 body {
     background-color: lightgray;
-    height: 100vh;
-    width: 100vw;
 }
 
 
@@ -26,13 +24,13 @@ header {
 }
 
 header > h1 {
-    border: 1px dotted black;
+    /*border: 1px dotted black; */
     font-size: 2em;
     flex: 0 0 200px;
 }
 
 header > nav {
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
